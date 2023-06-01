@@ -1,1 +1,4 @@
-# CodingDongari-USBset
+# 코딩동아리(2023) USB코딩파일
+
+1인1개씩뿌린USB에 들어있는 파일
+개인PC실행권장X 
