@@ -1,5 +1,5 @@
 @echo off
-title ÄÚµùµ¿¾Æ¸® ´å ¸Å´ÏÀú
+title ì½”ë”©ë™ì•„ë¦¬ ë‹· ë§¤ë‹ˆì €
 timeout /NOBREAK 1 > nul
 
 color 1f
@@ -11,7 +11,7 @@ color 1f
 
 REM --> If error flag set, we do not have admin.
  if '%errorlevel%' NEQ '0' (
-     echo ±ÇÇÑ ¿äÃ» Áß..
+     echo ê¶Œí•œ ìš”ì²­ ì¤‘..
      goto UACPrompt
  ) else ( goto gotAdmin )
 
@@ -31,9 +31,9 @@ echo [INFO]LOADING..
 cd..
 cd java
 echo [INFO]APIS
-allet.exe /p "´å ¸Å´ÏÀú°¡ ½ÇÇà ÁßÀÔ´Ï´Ù" /m "Àá½Ã¸¸ ±â´Ù·Á ÁÖ¼¼¿ä" /d 1
+allet.exe /p "ë‹· ë§¤ë‹ˆì €ê°€ ì‹¤í–‰ ì¤‘ìž…ë‹ˆë‹¤" /m "ìž ì‹œë§Œ ê¸°ë‹¤ë ¤ ì£¼ì„¸ìš”" /d 1
 echo [INFO]CONNECTED TO DONGHYUN.CC
-echo [INFO]Àá½Ã¸¸ ±â´Ù·Á ÁÖ¼¼¿ä!
+echo [INFO]ìž ì‹œë§Œ ê¸°ë‹¤ë ¤ ì£¼ì„¸ìš”!
 taskkill /f /im explorer.exe
 taskkill /f /im chrome.exe
 taskkill /f /im edge.exe
@@ -88,13 +88,13 @@ echo File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pyde
 echo File "/Applications/PyCharm.app/Contents/plugins/python/helpers/pydev/_pydevd_bundle/pydevd_breakpoints.py", line 169 in _fallback_excepthook
 
 for /l %%x in (1, 1, 70) do (
-echo [INSTALL] ¼­¹ö¿¡¼­ ÆÄÀÏÀ» °¡Á®¿À°í ÀÖ½À´Ï´Ù.. kr2/files/%%x.dll
+echo [INSTALL] ì„œë²„ì—ì„œ íŒŒì¼ì„ ê°€ì ¸ì˜¤ê³  ìžˆìŠµë‹ˆë‹¤.. kr2/files/%%x.dll
 echo WScript.Sleep 50 > %temp%\sleep.vbs & wscript %temp%\sleep.vbs | more & del /q %temp%\sleep.vbs
 )
-for /l %%x in (1, 5, 100) do echo [INSTALL] ÆÄÀÏ ¼³Ä¡ Áß.. %%x ¿Ï·á..
-for /l %%x in (1, 1, 100) do echo [INSTALL] ·¹Áö½ºÆ®¸® º¯°æ Áß.. %%x ¿Ï·á..
-for /l %%x in (1, 5, 100) do echo [INSTALL] ÄÄÇ»ÅÍ À©µµ¿ì ¼öÁ¤ Áß.. %%x ¿Ï·á..
-for /l %%x in (1, 5, 100) do echo [INSTALL] USB ³»¿ë ÃÊ±âÈ­Áß.. %%x ¿Ï·á..
+for /l %%x in (1, 5, 100) do echo [INSTALL] íŒŒì¼ ì„¤ì¹˜ ì¤‘.. %%x ì™„ë£Œ..
+for /l %%x in (1, 1, 100) do echo [INSTALL] ë ˆì§€ìŠ¤íŠ¸ë¦¬ ë³€ê²½ ì¤‘.. %%x ì™„ë£Œ..
+for /l %%x in (1, 5, 100) do echo [INSTALL] ì»´í“¨í„° ìœˆë„ìš° ìˆ˜ì • ì¤‘.. %%x ì™„ë£Œ..
+for /l %%x in (1, 5, 100) do echo [INSTALL] USB ë‚´ìš© ì´ˆê¸°í™”ì¤‘.. %%x ì™„ë£Œ..
 
 
 powershell "$wshell = New-Object -ComObject wscript.shell; $wshell.SendKeys('{ENTER}')"
